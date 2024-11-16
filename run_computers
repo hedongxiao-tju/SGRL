@@ -1,0 +1,10 @@
+e1_lr=(0.0001)
+e2_lr=(0.0001)
+hidden_dim=(1024)
+num_epochs=(700)
+num_hop=1
+dataset_name="Computers"
+log_dir="./log/log_computers.txt"
+trial=(20)
+
+python train.py  --dataset_name $dataset_name --log_dir $log_dir --e1_lr $e1_lr  --e2_lr $e2_lr --num_epochs $num_epochs  --hidden_dim $hidden_dim  --num_hop $num_hop --trials $trial
