@@ -8,10 +8,11 @@ scikit-learn==1.4.2
 scipy==1.13.0
 networkx==3.2
 numpy==1.26.4
-torch==1.13.1
-torch_geometric==2.3.0
+torch==2.1.0
+torch_geometric==2.5.3
 tqdm==4.66.2
 ```
+More details can be found in `env_description.txt`.
 
 # 2. How to use SGRL
 
