@@ -8,7 +8,6 @@ from sklearn.multiclass import OneVsRestClassifier
 from sklearn.preprocessing import OneHotEncoder, normalize
 from torch_geometric.transforms import NormalizeFeatures
 from torch_geometric.utils import to_undirected
-from GCL.eval import get_split, LREvaluator
 from data import load_dataset
 from models import Conv, Online, Target
 import torch
@@ -23,8 +22,6 @@ import argparse
 import sys
 import os
 
-
-from GCL.eval import get_split, LREvaluator
 def adj_norm(adj_t):
     deg = torch.sparse.sum(adj_t, dim=1).to_dense()
     deg_inv_sqrt = deg.pow(-0.5)
